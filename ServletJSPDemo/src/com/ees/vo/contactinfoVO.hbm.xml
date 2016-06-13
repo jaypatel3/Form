@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  
+   <class name="com.ees.vo.ContactinfoVO" table="Form">
+  
+   
+   	<id name="id" type="int" column="Id" >
+   		<generator class="increment"/>
+  	</id>
+
+	 
+  	<property name="address">
+   		<column name="Address" />
+  	</property> 
+  	<property name="city">
+   		<column name="City" />
+  	</property> 
+  	<property name="state">
+   		<column name="State" />
+  	</property> 
+  	
+  	<property name="country">
+   		<column name="Country" />
+  	</property> 
+  	
+  	<property name="phone">
+   		<column name="Phone" />
+  	</property> 
+  	
+  	<property name="bankName">
+   		<column name="BankName" />
+  	</property> 
+  	
+  	<property name="accountNo">
+   		<column name="AccountNo" />
+  	</property> 
+  	
+  	<property name="ssn">
+   		<column name="SSN" />
+  	</property> 
+  	
+  	
+  </class>
+ 
+
+</hibernate-mapping>
